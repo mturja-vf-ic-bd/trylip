@@ -5,3 +5,9 @@ localized the face in the frame and then used the facial landmark detector of th
 work -- to detect the lip landmarks on the face. From these points, I crafted some features and then used k-means clustering 
 algorithm to partition between five types of lip states. The clusters being learned, I manually assigned some labels to them and thus completing this project. The end result is a lip movement detector that can detect five types of lip movements in real-time.
 The detector is robust to varying distances from the camera. Here is a demonstration of this project.
+
+![No Movement](No_movement.png?raw=true "No Movement") 
+![Smiling](Smiling.png?raw=true "Smiling")
+![Laughing](Lauging.png?raw=true "Laughing")
+![Pouting](Pouting.png?raw=true "Pouting")
+![Opening](Open.png?raw=true "Opening")
