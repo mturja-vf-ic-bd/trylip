@@ -19,7 +19,7 @@ To localize face in a frame, I used dlibs frontal face detector.
 # Detecting Landmarks:
 To detect the landmarks on the lips, I used dlibs landmark detection library. There are 20 such points (from index 49 to 68). The indices of the points are given in the following figure.
 
-
+![Landmark](Landmarks.png?raw=true "Visualizing each of the 68 facial coordinate points from the iBUG 300-W dataset ")
 
 # Extracting Features From Landmarks:
 To extract features from landmarks, I have done the following two steps:
