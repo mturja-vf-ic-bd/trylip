@@ -11,3 +11,23 @@ The detector is robust to varying distances from the camera. Here is a demonstra
 ![Laughing](Lauging.png?raw=true "Laughing")
 ![Pouting](Pouting.png?raw=true "Pouting")
 ![Opening](Open.png?raw=true "Opening")
+
+# Face Localization:
+To localize face in a frame, I used dlibs frontal face detector.
+
+
+# Detecting Landmarks:
+To detect the landmarks on the lips, I used dlibs landmark detection library. There are 20 such points (from index 49 to 68). The indices of the points are given in the following figure.
+
+
+
+# Extracting Features From Landmarks:
+To extract features from landmarks, I have done the following two steps:
+Take the points with index 49,  51, 52, 53, 55, 57, 59.
+Create a polygon using these points and take the interior angles of the polygon as feature.
+
+# Unsupervised Learning model:
+Now that I have some features to work with, I used k-means clustering to differentiate between the shapes of the polygon. To train the model, I just recorded a video of me demonstrating different shapes. The model was able to learn the clusters just by watching one minute of video which is fascinating.
+
+# Future Work:
+I intend to extend this work to detect various shapes of mouth when human talks. My aim is to interpret what a person is saying just by analyzing the lip movement. This can help mutes to talk about using vocal chords.
